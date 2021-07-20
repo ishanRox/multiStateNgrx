@@ -5,7 +5,7 @@ import { StoreModule } from '@ngrx/store';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IncreaseComponent } from './number-view/increase/increase.component';
-import { numberReducer } from './ngrx/reducer/numberreducer';
+import { numberReducer } from './ngrx/reducer/reducer';
 import { ShowComponent } from './number-view/show/show.component';
 import { PostComponent } from './post-view/post/post.component';
 import { PostviewComponent } from './post-view/postview/postview.component';

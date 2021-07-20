@@ -5,7 +5,7 @@ import { postState } from "../state/poststate";
 
 const postCreate = createReducer(postState,
     on(createPost, (state, action) => {
-        return {...state, posts: [...state.posts, action.post] }
+        return {...state, posts: [ ...state.posts,action.post] }
     })
 );
 

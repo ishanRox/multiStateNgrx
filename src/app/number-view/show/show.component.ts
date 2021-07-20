@@ -15,7 +15,8 @@ export class ShowComponent implements OnInit {
   constructor(private store: Store<{ numberSharedState: noState }>) { }
 
   ngOnInit(): void {
-    this.count=this.store.select('numberSharedState');
+    this.store.select('numberSharedState').subscribe(e => console.log(e,'must be a number state'));
+    this.count = this.store.select('numberSharedState');
   }
 
 }
